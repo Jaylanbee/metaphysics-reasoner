@@ -312,5 +312,95 @@
     },
     "source": "中州學派經典",
     "version": "2.0"
+  },
+  {
+    "patternId": "P_JIE_WU_XING",
+    "patternName": "疾厄宮五行臟腑對應",
+    "category": "健康/疾厄",
+    "condition": {
+      "description": "疾厄宮見特定星曜對應臟腑五行",
+      "rules": [
+        {
+          "target": "疾厄宮",
+          "stars": [
+            "紫微",
+            "天機",
+            "太陽",
+            "武曲",
+            "天同",
+            "廉貞",
+            "天府",
+            "太陰",
+            "貪狼",
+            "巨門",
+            "天相",
+            "天梁",
+            "七殺",
+            "破軍"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "疾厄五行，臟腑分明",
+      "modern": "依據倪海夏《天紀》法則，各星曜五行屬性直接對應人體臟腑。例如：紫微/天府屬土(脾胃)，太陽屬火(心血管)，天機屬木(肝膽)，武曲/七殺屬金(肺/呼吸道)，太陰/破軍/天同屬水(腎/泌尿)。",
+      "exception": "逢化忌或煞星（羊陀火鈴空劫），該臟腑器官發生病變機率大增，需提早預防。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
+  },
+  {
+    "patternId": "P_QIAN_YI_BAN_KONG",
+    "patternName": "遷移宮半空折翅",
+    "category": "外出/意外",
+    "condition": {
+      "description": "遷移宮見特定凶煞組合",
+      "rules": [
+        {
+          "target": "遷移宮",
+          "stars": [
+            "地空",
+            "地劫",
+            "化忌",
+            "擎羊",
+            "陀羅"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "半空折翅，客死他鄉",
+      "modern": "依據倪海夏體系，遷移宮逢空劫、化忌或嚴重煞星，為「半空折翅」之象。主外出、出國或旅行途中極易遭遇突發重大意外、交通事故或血光之災。",
+      "exception": "逢此格局，流年或大限走到時，強烈建議避免搭乘飛機、從事高風險活動，應保守在家。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
+  },
+  {
+    "patternId": "P_CAI_BO_RI_YUE",
+    "patternName": "財帛宮日月反背",
+    "category": "財富/破耗",
+    "condition": {
+      "description": "財帛宮逢太陽落陷（戌亥子丑）或太陰落陷（辰巳午未）",
+      "rules": [
+        {
+          "target": "財帛宮",
+          "stars": [
+            "太陽",
+            "太陰"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "日月反背，勞而無功",
+      "modern": "依倪海夏解讀，財帛宮日月反背（如太陽在亥、太陰在巳）主求財極度奔波勞碌，日夜顛倒，且財來財去難以積蓄，易有為人作嫁之憾。",
+      "exception": "【化解法】：此格必須從事「日夜顛倒」之行業（如夜班、跨國貿易、24小時便利店、夜市等）方能順應天機，轉勞碌為財富。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
   }
 ]
