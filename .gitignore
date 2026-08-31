@@ -5,3 +5,9 @@ vendor/
 chroma_db/
 *.html
 .pytest_cache/
+data/ziwei_samples_v3/
+*.zip
+*.zip.*
+*.001
+*.002
+*.003
