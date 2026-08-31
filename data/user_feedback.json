@@ -1,0 +1,56 @@
+[
+  {
+    "chart_id": "chart_1",
+    "reasoning_result": {
+      "result": "ok"
+    },
+    "user_rating": 5,
+    "comments": "Great accuracy",
+    "timestamp": 1788152655.8306954
+  },
+  {
+    "chart_id": "chart_2",
+    "reasoning_result": {
+      "result": "ok"
+    },
+    "user_rating": 4,
+    "comments": "Good",
+    "timestamp": 1788152655.831234
+  },
+  {
+    "chart_id": "chart_3",
+    "reasoning_result": {
+      "result": "bad"
+    },
+    "user_rating": 2,
+    "comments": "Poor",
+    "timestamp": 1788152655.8315802
+  },
+  {
+    "chart_id": "chart_1",
+    "reasoning_result": {
+      "result": "ok"
+    },
+    "user_rating": 5,
+    "comments": "Great accuracy",
+    "timestamp": 1788152716.2196681
+  },
+  {
+    "chart_id": "chart_2",
+    "reasoning_result": {
+      "result": "ok"
+    },
+    "user_rating": 4,
+    "comments": "Good",
+    "timestamp": 1788152716.22038
+  },
+  {
+    "chart_id": "chart_3",
+    "reasoning_result": {
+      "result": "bad"
+    },
+    "user_rating": 2,
+    "comments": "Poor",
+    "timestamp": 1788152716.2209723
+  }
+]

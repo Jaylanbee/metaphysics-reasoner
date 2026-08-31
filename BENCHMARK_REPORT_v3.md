@@ -2,7 +2,7 @@
 
 > **評測版本**：Ni Haixia Ziwei Dataset v3 (518,400 全量宇宙庫)  
 > **評測引擎**：Metaphysics Reasoner Engine v2.0 (Dual-Track RAG)  
-> **測試時間**：2026-08-31 12:47:19
+> **測試時間**：2026-08-31 15:54:49
 
 ---
 
