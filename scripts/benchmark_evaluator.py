@@ -202,4 +202,4 @@ class BenchmarkEvaluator:
 
 if __name__ == "__main__":
     evaluator = BenchmarkEvaluator()
-    evaluator.run_benchmark(sample_size=100, output_report=os.path.join(os.path.dirname(__file__), "..", "BENCHMARK_REPORT_v3.md"))
+    evaluator.run_benchmark(sample_size=1000, output_report=os.path.join(os.path.dirname(__file__), "..", "BENCHMARK_REPORT_v3.md"))
