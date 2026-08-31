@@ -5,6 +5,14 @@ class DestinyReasoner:
     def __init__(self):
         self.base_dir = os.path.dirname(__file__)
         self.data_dir = os.path.join(self.base_dir, "..", "data")
+        self.exact_map_file = os.path.join(self.data_dir, "pattern_to_classics_map.json")
+        self.exact_map = {}
+        if os.path.exists(self.exact_map_file):
+            try:
+                with open(self.exact_map_file, "r", encoding="utf-8") as ef:
+                    self.exact_map = json.load(ef)
+            except Exception:
+                pass
         self.zhongzhou_patterns = self._load_json("zhongzhou_patterns_v2.json")
         self.bazi_foundations = self._load_json("bazi_foundations.json")
         self.classics_corpus = self._load_classics()
