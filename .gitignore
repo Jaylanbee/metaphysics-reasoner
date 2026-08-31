@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.pyc
+node_modules/
+vendor/
+chroma_db/
+*.html
+.pytest_cache/
