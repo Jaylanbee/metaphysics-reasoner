@@ -1,1 +1,7 @@
-﻿{   "book": "摮像?帑",   "chapter": "隢蟡?,   "originalText": "?怠??函?嚗?瘙?隞扎誑?亙僕??隞文?荔????????澆????瓷摰憌?甇斤蟡????其???嚗捏?瑕???函?銋??銋??n\n... (?芸??挾嚗? RAG 瑼Ｙ揣撉冽皜祈岫雿輻)",   "annotations": {},   "source": "manual_extraction/zipingzhenquan_cleaned.json" }
+{
+  "book": "子平真詮",
+  "chapter": "論用神",
+  "originalText": "八字用神，專求月令。以日干配月令地支，而生剋不同，格局分焉。財官印食，此用神之善而順用之者也；殺傷劫刃，用神之不善而逆用之者也。\n\n... (截取片段，供 RAG 檢索骨架測試使用)",
+  "annotations": {},
+  "source": "manual_extraction/zipingzhenquan_cleaned.json"
+}

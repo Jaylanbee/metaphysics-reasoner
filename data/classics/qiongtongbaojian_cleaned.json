@@ -1,1 +1,7 @@
-﻿{   "book": "蝒桅窄??,   "chapter": "隢",   "originalText": "?交?銋嚗??撖?敺皞思?嚗??∠撅???????剁?瘞?撓瘛飲嚗耦瞍詨????冽??????冽偌瞏支???冽瑽?敺??銋??n\n... (?芸??挾嚗? RAG 瑼Ｙ揣撉冽皜祈岫雿輻)",   "annotations": {},   "source": "manual_extraction/qiongtongbaojian_cleaned.json" }
+{
+  "book": "窮通寶鑑",
+  "chapter": "論木",
+  "originalText": "春月之木，猶有餘寒，得火溫之，乃無盤屈之患。秋月之木，氣漸淒涼，形漸凋敗。夏木枝葉繁盛，用水潤之。冬木枯槁，得火暖之乃吉。\n\n... (截取片段，供 RAG 檢索骨架測試使用)",
+  "annotations": {},
+  "source": "manual_extraction/qiongtongbaojian_cleaned.json"
+}

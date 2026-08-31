@@ -1,1 +1,12 @@
-﻿{   "chartId": "BAZI_TEST_001",   "name": "?怠?璅⊥?賜 - 皜祈岫銝",   "bazi": {     "year": ["??, "摮?],     "month": ["銝?, "撖?],     "day": ["銝?, "??],     "hour": ["摨?, "??]   },   "day_master": "銝?,   "dominant_shishen": "甇?" }
+{
+  "chartId": "BAZI_TEST_001",
+  "name": "八字模擬命盤 - 測試一",
+  "bazi": {
+    "year": ["甲", "子"],
+    "month": ["丙", "寅"],
+    "day": ["丁", "卯"],
+    "hour": ["庚", "戌"]
+  },
+  "day_master": "丁",
+  "dominant_shishen": "正印"
+}

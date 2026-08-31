@@ -1,1 +1,7 @@
-﻿{   "book": "皛游予擃?,   "chapter": "??隢?,   "originalText": "甈脩?嗡犖撖?鞎⊥除???嗚炬?亙鈭箄眼嚗???????Ｚ?敹??嗅????伐?敹瘞湔膜??銵???銝銝?賬n\n... (?芸??挾嚗? RAG 瑼Ｙ揣撉冽皜祈岫雿輻)",   "annotations": {},   "source": "manual_extraction/ditiansui_cleaned.json" }
+{
+  "book": "滴天髓",
+  "chapter": "通神論",
+  "originalText": "欲知其人富，財氣通門戶。欲知其人貴，官星有理會。木盛逢者，必見其傷。火炎土燥，必用水潤。五行和者，一世無災。\n\n... (截取片段，供 RAG 檢索骨架測試使用)",
+  "annotations": {},
+  "source": "manual_extraction/ditiansui_cleaned.json"
+}

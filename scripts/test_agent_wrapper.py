@@ -1,1 +1,40 @@
-﻿import json from agent_tool_wrapper import MetaphysicsAgentWrapper  def run_integration_test():     """     璅⊥ LLM ?交雿輻??閰勗?嚗???JSON ??澆 Agent Wrapper ??蝔?    ??撽? 敺???-> ???刻? -> RAG撘?? -> 頛詨???勗? ??璇?瘚???    """     print("=== ?? Agent UI Wrapper ?游?皜祈岫 ===")      wrapper = MetaphysicsAgentWrapper()      # 璅⊥ LLM 敺?閰?"撟急???銝?1990 撟?5 ??5 ??颲唳? ?瑞??" 閫???箇??     llm_generated_args = json.dumps({         "year": 1990,         "month": 5,         "day": 5,         "time_str": "颲?,         "gender": "M"     })      print(f"璅⊥ LLM ?澆 Tool ?喳?: {llm_generated_args}\n")      # ?瑁? Wrapper (?折撠??ChartParser ?Ｙ??賜嚗?鈭斤策 DestinyReasoner ?刻?)     result_json_str = wrapper.execute_tool(llm_generated_args)      print("=== Agent Tool ?蝯? ===")     try:         # 撠?銝脣?閫????JSON 頛詨嚗誑?拚霈         result_dict = json.loads(result_json_str)         print(json.dumps(result_dict, ensure_ascii=False, indent=2))          # 蝪∪撽?蝯?         if "ziwei_summary" in result_dict and "bazi_summary" in result_dict and "cross_reasoning_synthesis" in result_dict:              print("\n???游?皜祈岫??嚗??葡?舀??扎隢????摩??)         else:              print("\n???游?皜祈岫憭望?嚗??單撘撩撠?閬?憛?)      except Exception as e:         print(f"???游?皜祈岫憭望?: ?????JSON?隤? {e}")         print("Raw Output:", result_json_str)  if __name__ == "__main__":     run_integration_test()
+﻿# -*- coding: utf-8 -*-
+import json
+import sys
+import os
+
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from scripts.agent_tool_wrapper import MetaphysicsAgentWrapper
+
+def run_integration_test():
+    print("=== 啟動 Agent UI Wrapper 整合測試 ===")
+    wrapper = MetaphysicsAgentWrapper()
+    mock_llm_args = json.dumps({
+        "year": 1990,
+        "month": 5,
+        "day": 5,
+        "time_str": "辰",
+        "gender": "M"
+    })
+    
+    print(f"模擬 LLM 呼叫 Tool 傳入參數: {mock_llm_args}")
+    response_str = wrapper.execute_tool(mock_llm_args)
+    print("\n=== Agent Tool 回傳結果 ===")
+    print(response_str)
+    
+    try:
+        data = json.loads(response_str)
+        if "ziwei_summary" in data and "bazi_summary" in data and "cross_reasoning_synthesis" in data:
+            print("\n[PASS] 整合測試成功！回傳符合預期架構。")
+        else:
+            print("\n[FAIL] 回傳格式缺少必要區塊。")
+    except Exception as e:
+        print(f"[FAIL] 回傳非預期 JSON: {e}")
+
+if __name__ == "__main__":
+    run_integration_test()
