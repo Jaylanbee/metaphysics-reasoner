@@ -363,7 +363,13 @@ class DestinyReasoner:
             "cross_reasoning_synthesis": ""
         }
 
-        # 簡單的合參衝突仲裁邏輯
+        # [合參機制透明度說明]
+        # 此處的「紫微 ✕ 八字交叉合參仲裁」採用明確的規則引擎 (Rule-based engine) 進行推論。
+        # 目的是為了確保決策的「可追溯性」(Traceability) 與穩健性，
+        # 並非依賴不可解釋的統計或機器學習 (ML/Black-box) 模型。
+        # 現階段規則：根據紫微星象的靜態破格(煞星)特徵與八字十神(動態/穩健)進行交叉比對仲裁。
+
+        # 明確的合參規則仲裁邏輯 (Rule-based Arbitration Logic)
         zw_has_warning = any("warning" in res for res in ziwei_results)
         bz_career = bazi_results.get("career_analysis", {}).get("dominant_shishen", "")
 
