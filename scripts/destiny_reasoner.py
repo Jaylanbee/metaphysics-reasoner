@@ -147,13 +147,6 @@ class DestinyReasoner:
                         is_match = False
                         break
 
-                elif operator == "IN_SAME_PALACE_ANY":
-                    required_stars = rule.get("stars", [])
-                    # 檢查 required_stars 是否至少有一個在 stars_in_palace 中
-                    if not any(star in stars_in_palace for star in required_stars):
-                        is_match = False
-                        break
-
                 elif operator == "IN_POSITION":
                     required_positions = rule.get("positions", [])
                     if position not in required_positions:

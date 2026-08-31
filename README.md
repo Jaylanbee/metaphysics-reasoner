@@ -50,3 +50,15 @@ Metaphysics-Reasoner/
 │   └── run_test_cases.py
 └── tests/
 ```
+### Phase 1: SQLite Data Ingestion
+
+The repository now contains `scripts/ingest_to_sqlite.py`, which is capable of parsing and batch ingesting `.jsonl` or `.jsonl.gz` dataset files containing Zi Wei chart data.
+
+**Example Usage**:
+```bash
+python scripts/ingest_to_sqlite.py \
+    --folder ./data/ziwei_samples_v3/ \
+    --db-path ./data/ziwei_universe_518k.db \
+    --batch-size 1000
+```
+Run `python scripts/ingest_to_sqlite.py --help` for full usage documentation.

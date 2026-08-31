@@ -126,37 +126,3 @@ class ExperienceBase:
         except Exception as e:
             logger.error(f"寫入反饋失敗: {e}")
             return False
-
-
-    def integrate_feedback_to_baseline(self, baseline_report: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        結合用戶反饋調整基線對比結果
-        """
-        feedbacks = []
-        if os.path.exists(self.feedback_path):
-            try:
-                with open(self.feedback_path, "r", encoding="utf-8") as f:
-                    feedbacks = json.load(f)
-            except Exception as e:
-                logger.error(f"讀取反饋失敗: {e}")
-
-        if not feedbacks:
-            baseline_report["adjusted_match_rate"] = baseline_report.get("match_rate", 0)
-            baseline_report["feedback_impact"] = "No feedback data available."
-            return baseline_report
-
-        total_rating = sum(f.get("user_rating", 3) for f in feedbacks)
-        avg_rating = total_rating / len(feedbacks)
-
-        # Adjust match rate based on average user rating (assuming 3 is neutral, 5 is perfect)
-        # We define an adjustment factor, e.g. rating 5 increases match rate, rating 1 decreases it.
-        rating_factor = (avg_rating - 3) * 0.05
-
-        original_match_rate = baseline_report.get("match_rate", 0)
-        adjusted_match_rate = min(1.0, max(0.0, original_match_rate + rating_factor))
-
-        baseline_report["adjusted_match_rate"] = adjusted_match_rate
-        baseline_report["average_user_rating"] = avg_rating
-        baseline_report["feedback_impact"] = f"Adjusted match rate by {rating_factor:+.2f} based on {len(feedbacks)} feedbacks."
-
-        return baseline_report
