@@ -7,7 +7,7 @@ from backend.config import settings
 from backend.logging_config import setup_logging
 from backend.metrics import MetricsMiddleware, metrics_endpoint
 from backend.health import router as health_router
-from backend.routers import batch, statistics
+from backend.routers import batch, statistics, report
 
 setup_logging(settings.APP_ENV)
 
@@ -31,6 +31,7 @@ app.add_middleware(MetricsMiddleware)
 app.include_router(health_router, tags=["Health"])
 app.include_router(batch.router, prefix="/api/v1/batch", tags=["Batch Processing"])
 app.include_router(statistics.router, prefix="/api/v1/statistics", tags=["Statistics"])
+app.include_router(report.router, prefix="/api/v1/report", tags=["Report Generator"])
 app.add_route("/metrics", metrics_endpoint)
 
 @app.exception_handler(Exception)

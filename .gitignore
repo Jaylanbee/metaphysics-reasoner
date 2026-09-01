@@ -12,3 +12,4 @@ data/ziwei_samples_v3/
 *.002
 *.003
 data/ziwei_universe_518k.db
+frontend/.vite/

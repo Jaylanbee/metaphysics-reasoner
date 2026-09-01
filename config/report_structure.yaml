@@ -1,0 +1,78 @@
+version: "1.0"
+report_name: "Metaphysics Professional Reading Report"
+description: "Definition of the 9 modules required for a complete professional astrological reading."
+
+modules:
+  - id: 1
+    name: "基本命盤與格局總覽 (Chart & Patterns Overview)"
+    required: true
+    min_length: 50
+    max_length: 300
+    description: "Summarizes the birth chart data and detected patterns."
+
+  - id: 2
+    name: "五維合參分析 (5D Cross-Validation Analysis)"
+    required: true
+    min_length: 100
+    max_length: 500
+    description: "Detailed breakdown of the 5-dimension cross-validation between Ziwei and Bazi."
+
+  - id: 3
+    name: "核心性格與潛力 (Core Personality & Potential)"
+    required: true
+    min_length: 100
+    max_length: 400
+    description: "Analyzes the user's personality traits and innate strengths."
+
+  - id: 4
+    name: "事業與財富發展 (Career & Wealth Trajectory)"
+    required: true
+    min_length: 150
+    max_length: 600
+    description: "Predicts career paths and wealth accumulation potential."
+
+  - id: 5
+    name: "感情與人際關係 (Relationships & Social Network)"
+    required: true
+    min_length: 100
+    max_length: 500
+    description: "Insights into romantic relationships and broader social dynamics."
+
+  - id: 6
+    name: "健康與疾厄風險 (Health & Wellness Risks)"
+    required: true
+    min_length: 50
+    max_length: 300
+    description: "Identifies potential health risks based on the chart."
+
+  - id: 7
+    name: "流年大運解析 (Current Decade & Annual Trends)"
+    required: true
+    min_length: 150
+    max_length: 600
+    description: "Analysis of the current major life phase and the current year's energy."
+
+  - id: 8
+    name: "古籍印證與引言 (Classic Texts Citations)"
+    required: true
+    min_length: 50
+    max_length: 400
+    description: "Relevant quotes from the 8 ancient classics to support the analysis."
+
+  - id: 9
+    name: "最終行動建議與避險 (Final Actionable Advice & Risk Mitigation)"
+    required: true
+    min_length: 100
+    max_length: 500
+    description: "Synthesized, practical advice for the user."
+
+forbidden_words:
+  - "一定"
+  - "絕對"
+  - "保證"
+  - "必定"
+  - "鐵定"
+  - "無疑"
+  - "百分之百"
+  - "肯定會"
+  - "註定"

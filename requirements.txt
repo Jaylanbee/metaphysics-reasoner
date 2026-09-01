@@ -3,3 +3,5 @@ pydantic>=2.0.0
 pytest>=7.0.0
 tqdm
 prometheus_client
+pyyaml
+python-multipart
