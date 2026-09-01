@@ -312,5 +312,450 @@
     },
     "source": "中州學派經典",
     "version": "2.0"
+  },
+  {
+    "patternId": "P_JIE_WU_XING",
+    "patternName": "疾厄宮五行臟腑對應",
+    "category": "健康/疾厄",
+    "condition": {
+      "description": "疾厄宮見特定星曜對應臟腑五行",
+      "rules": [
+        {
+          "target": "疾厄宮",
+          "stars": [
+            "紫微",
+            "天機",
+            "太陽",
+            "武曲",
+            "天同",
+            "廉貞",
+            "天府",
+            "太陰",
+            "貪狼",
+            "巨門",
+            "天相",
+            "天梁",
+            "七殺",
+            "破軍"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "疾厄五行，臟腑分明",
+      "modern": "依據倪海夏《天紀》法則，各星曜五行屬性直接對應人體臟腑。例如：紫微/天府屬土(脾胃)，太陽屬火(心血管)，天機屬木(肝膽)，武曲/七殺屬金(肺/呼吸道)，太陰/破軍/天同屬水(腎/泌尿)。",
+      "exception": "逢化忌或煞星（羊陀火鈴空劫），該臟腑器官發生病變機率大增，需提早預防。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
+  },
+  {
+    "patternId": "P_QIAN_YI_BAN_KONG",
+    "patternName": "遷移宮半空折翅",
+    "category": "外出/意外",
+    "condition": {
+      "description": "遷移宮見特定凶煞組合",
+      "rules": [
+        {
+          "target": "遷移宮",
+          "stars": [
+            "地空",
+            "地劫",
+            "化忌",
+            "擎羊",
+            "陀羅"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "半空折翅，客死他鄉",
+      "modern": "依據倪海夏體系，遷移宮逢空劫、化忌或嚴重煞星，為「半空折翅」之象。主外出、出國或旅行途中極易遭遇突發重大意外、交通事故或血光之災。",
+      "exception": "逢此格局，流年或大限走到時，強烈建議避免搭乘飛機、從事高風險活動，應保守在家。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
+  },
+  {
+    "patternId": "P_CAI_BO_RI_YUE",
+    "patternName": "財帛宮日月反背",
+    "category": "財富/破耗",
+    "condition": {
+      "description": "財帛宮逢太陽落陷（戌亥子丑）或太陰落陷（辰巳午未）",
+      "rules": [
+        {
+          "target": "財帛宮",
+          "stars": [
+            "太陽",
+            "太陰"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "日月反背，勞而無功",
+      "modern": "依倪海夏解讀，財帛宮日月反背（如太陽在亥、太陰在巳）主求財極度奔波勞碌，日夜顛倒，且財來財去難以積蓄，易有為人作嫁之憾。",
+      "exception": "【化解法】：此格必須從事「日夜顛倒」之行業（如夜班、跨國貿易、24小時便利店、夜市等）方能順應天機，轉勞碌為財富。"
+    },
+    "source": "倪海夏《天紀》",
+    "version": "3.0"
+  },
+  {
+    "patternId": "P_LIAN_ZHEN_QING_BAI",
+    "patternName": "廉貞清白格",
+    "category": "品格/事業",
+    "condition": {
+      "description": "廉貞在寅申守命，不加煞",
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "廉貞"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "classic": "廉貞清白能相守",
+      "modern": "為人清白端正，堅守原則，適合從事公職或法務工作。",
+      "exception": "逢煞星破格"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_SHUANG_LU_CHAO_YUAN",
+    "patternName": "雙祿朝垣格",
+    "category": "富貴",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "祿存",
+            "化祿"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "財源滾滾，左右逢源。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_ZI_FU_CHAO_YUAN",
+    "patternName": "紫府朝垣格",
+    "category": "貴氣",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "紫微",
+            "天府"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "一生多得貴人提攜。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_MING_WU_ZHENG_YAO",
+    "patternName": "命無正曜格",
+    "category": "波折",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "需借對宮吉凶，早年奔波。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_TIAN_YI_GONG_MING",
+    "patternName": "天乙拱命格",
+    "category": "平穩",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "天魁",
+            "天鉞"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "遇難呈祥，考試順利。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_WEN_XING_AN_MING",
+    "patternName": "文星暗拱格",
+    "category": "才華",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "文昌",
+            "文曲"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "才氣縱橫，學術成就。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_KE_MING_AN_LU",
+    "patternName": "科名暗祿格",
+    "category": "學術",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "化科",
+            "祿存"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "以專業知識獲取高薪。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_QIAN_JIN_JIA_JING",
+    "patternName": "千金家景格",
+    "category": "富貴",
+    "condition": {
+      "rules": [
+        {
+          "target": "田宅宮",
+          "stars": [
+            "祿存",
+            "化祿"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "祖業豐厚或不動產投資獲利。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_YIN_YANG_HUI_PEI",
+    "patternName": "陰陽會配格",
+    "category": "感情",
+    "condition": {
+      "rules": [
+        {
+          "target": "夫妻宮",
+          "stars": [
+            "太陽",
+            "太陰"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "配偶能力強，相互扶持。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_TENG_SHE_CHAN_JIAO",
+    "patternName": "騰蛇纏交格",
+    "category": "凶局",
+    "condition": {
+      "rules": [
+        {
+          "target": "命宮",
+          "stars": [
+            "陀羅",
+            "化忌"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "是非纏身，官司糾紛。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_BAI_HU_TUN_XIAO",
+    "patternName": "白虎吞金格",
+    "category": "破耗",
+    "condition": {
+      "rules": [
+        {
+          "target": "財帛宮",
+          "stars": [
+            "擎羊",
+            "化忌"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "易有突發性大破財。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_XIONG_DI_FEI_YAN",
+    "patternName": "兄弟飛雁格",
+    "category": "人際",
+    "condition": {
+      "rules": [
+        {
+          "target": "兄弟宮",
+          "stars": [
+            "天機",
+            "巨門",
+            "化忌"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "手足緣薄，各自發展。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_ZI_NU_GUI_XIAN",
+    "patternName": "子女貴顯格",
+    "category": "人際",
+    "condition": {
+      "rules": [
+        {
+          "target": "子女宮",
+          "stars": [
+            "紫微",
+            "天相",
+            "左輔"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "後代有成，光宗耀祖。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_JIAO_YOU_BEI_PAN",
+    "patternName": "交友背叛格",
+    "category": "人際",
+    "condition": {
+      "rules": [
+        {
+          "target": "交友宮",
+          "stars": [
+            "貪狼",
+            "陀羅",
+            "化忌"
+          ],
+          "operator": "IN_SAME_PALACE_ANY"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "慎防合作夥伴背刺。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_FU_MU_EN_GUANG",
+    "patternName": "父母恩光格",
+    "category": "人際",
+    "condition": {
+      "rules": [
+        {
+          "target": "父母宮",
+          "stars": [
+            "天魁",
+            "天鉞",
+            "化科"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "深受長輩與上司栽培。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
+  },
+  {
+    "patternId": "P_FU_DE_AN_TAI",
+    "patternName": "福德安泰格",
+    "category": "心智",
+    "condition": {
+      "rules": [
+        {
+          "target": "福德宮",
+          "stars": [
+            "天同",
+            "天梁"
+          ],
+          "operator": "ALL_IN_SAN_FANG_SI_ZHENG"
+        }
+      ]
+    },
+    "interpretation": {
+      "modern": "內心平靜，晚年安詳。"
+    },
+    "source": "中州學派經典",
+    "version": "3.1"
   }
 ]
